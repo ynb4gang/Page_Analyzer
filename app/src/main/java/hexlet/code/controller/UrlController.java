@@ -6,7 +6,6 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
-
 import hexlet.code.dto.BasePage;
 import hexlet.code.dto.urls.UrlPage;
 import hexlet.code.dto.urls.UrlsPage;

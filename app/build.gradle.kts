@@ -39,7 +39,6 @@ dependencies {
     implementation("com.h2database:h2:2.2.224")
 
     implementation("org.postgresql:postgresql:42.7.2")
-
     implementation("com.konghq:unirest-java:3.14.5")
 
     implementation ("org.jsoup:jsoup:1.17.2")

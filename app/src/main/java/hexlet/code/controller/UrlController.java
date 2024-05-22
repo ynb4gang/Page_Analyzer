@@ -6,6 +6,7 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
+
 import hexlet.code.dto.BasePage;
 import hexlet.code.dto.urls.UrlPage;
 import hexlet.code.dto.urls.UrlsPage;
@@ -108,7 +109,7 @@ public class UrlController {
         ctx.redirect(NamedRoutes.urlPath(id));
     }
 
-    private static String buildNormalizedUrl(URL parsedUrl) {
+    public static String buildNormalizedUrl(URL parsedUrl) {
         return parsedUrl.getProtocol() + "://" + parsedUrl.getHost()
                 + (parsedUrl.getPort() != -1 ? ":" + parsedUrl.getPort() : "");
     }

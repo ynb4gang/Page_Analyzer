@@ -34,7 +34,7 @@ public class AppTest {
     public static void startWebServer() throws IOException {
         mockServer = new MockWebServer();
         urlString = mockServer.url("/").toString();
-        var page = Files.readString(Paths.get("./src/test/resources/fixtures/testPage.html"));
+        var page = Files.readString(Paths.get("./src/test/resources/fixtures/test.html"));
         MockResponse mockResponse = new MockResponse().setResponseCode(200).setBody(page);
         mockServer.enqueue(mockResponse);
     }

@@ -65,3 +65,7 @@ tasks.jacocoTestReport {
         xml.required = true
     }
 }
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-Xlint:deprecation")
+}

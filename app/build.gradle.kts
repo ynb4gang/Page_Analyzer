@@ -24,11 +24,10 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")
     testImplementation ("org.assertj:assertj-core:3.25.2")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
-
     implementation("io.javalin:javalin:6.1.3")
     implementation("io.javalin:javalin-bundle:6.1.3")
     implementation("io.javalin:javalin-rendering:6.1.3")
-
+    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.8.10")
     implementation("gg.jte:jte:3.1.10")
 
     implementation("org.slf4j:slf4j-simple:2.0.9")
@@ -43,7 +42,7 @@ dependencies {
 
     implementation("org.postgresql:postgresql:42.7.2")
     implementation("com.konghq:unirest-java:3.14.5")
-
+    implementation(kotlin("stdlib"))
     implementation ("org.jsoup:jsoup:1.17.2")
     implementation(kotlin("script-runtime"))
 

@@ -23,7 +23,7 @@ public class UrlController {
         var page = new BasePage();
         page.setFlash(ctx.consumeSessionAttribute("flash"));
         page.setFlashColor(ctx.consumeSessionAttribute("flashColor"));
-        ctx.render("index.jte", Collections.singletonMap("page", page));
+        ctx.render("templates/index.jte", Collections.singletonMap("page", page));
     }
 
     public static void createUrl(Context ctx) throws SQLException {
@@ -64,7 +64,7 @@ public class UrlController {
         page.setFlash(ctx.consumeSessionAttribute("flash"));
         page.setFlashColor(ctx.consumeSessionAttribute("flashColor"));
 
-        ctx.render("/urls/index.jte", Collections.singletonMap("page", page));
+        ctx.render("templates/urls/index.jte", Collections.singletonMap("page", page));
     }
 
 

@@ -79,7 +79,7 @@ public class UrlController {
         page.setFlash(ctx.consumeSessionAttribute("flash"));
         page.setFlashColor(ctx.consumeSessionAttribute("flashColor"));
 
-        ctx.render("urls/show.jte", Collections.singletonMap("page", page));
+        ctx.render("templates/urls/show.jte", Collections.singletonMap("page", page));
     }
 
     public static void checkUrl(Context ctx) {
